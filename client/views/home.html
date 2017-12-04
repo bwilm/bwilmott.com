@@ -1,0 +1,86 @@
+<!-- Shows all blog posts, each one showing the title, author's full name, 
+category, and date formatted MM/DD/YYYY HH:MM AM/PM
+Each blog post should have a link that says 
+Read that should link to the single blog post view
+Should have a button labeled Compose at the top of the page. 
+Clicking the button should navigate to the compose view -->
+
+<body>
+  <head>
+    <nav class="navbar navbar-inverse navbar-fixed-up">...</nav>
+  </head>
+  <div class="splashpage">
+    <div class="backimage">
+      <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluid" ,id="splashbox">
+          <br>
+
+          <!-- <div class="container" id= "splash"> -->
+          <br>
+          <br>
+
+
+          <h1 class="display-3" style="color:hotpink;">Everything About Nothing</h1>
+          <p class="lead" style="color:hotpink;">Where Blogs come to die</p>
+
+
+          <button type="button" class="btn btn-outline-success">
+            <a ng-href="/compose">Compose!
+              <a/>
+          </button>
+
+          <button type="button" class="btn btn-outline-success">
+            <a ng-href="/update">Update Blog</a>
+          </button>
+          <br>
+          <br>
+
+          <button type="button" class="btn btn-outline-success">
+            <a ng-href="/login">login</a>
+            <br>
+          </button>
+        
+          <button type="button" class="btn btn-outline-success">
+            <a ng-href="/logout">logout</a>
+            <br>
+          </button>
+        </div>
+        <br>
+        <br>
+        <div class="blogbox">
+          <div class="container">
+            <span class="inline" ng-repeat="P in Posts">
+                <div class="card inline float-left maincard w-50">
+                  
+                <img class="card-img-top rounded card-primary text-center"src="http://i68.tinypic.com/2rf6kpd.jpg"  alt="Card image cap"  >
+                
+                <div class="card-block">
+                <h2 class="card title"<span style="color:hotpink">{{P.title}}</span></h2>
+                <p class="card-text">
+                <h5>{{P.categoryname}}</h5>
+                <h5><span>{{P.authorfirstname}}</h5> <h5>{{P.authorlastname}}</span></h5>
+                <br>
+                <h5>{{P.createdAt | date}}</h5>
+                <h3>
+                  <br>
+                </h3>
+                <button type="button" class="btn btn-outline-success">
+                  <a ng-href="/{{P.id}}">select</a>
+                  <br>
+                </button>
+              </p>
+                </div>
+              <br>
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+</body>
+<div id="negativespacer"></div>
