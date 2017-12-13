@@ -16,12 +16,12 @@ Navigates back to the list of posts when successfully saved -->
             <option value="">Select User</option>
             <option ng-repeat="u in users" value="{{ u.id }}">{{u.firstname}} {{u.lastname}}</option>
         </select>
-        <textarea class="form-control textarea" col ng-model="post.content" rows="20" w-50></textarea>
+        <textarea class="form-control textarea col" ng-model="post.content" rows="20" w-50></textarea>
         <input type="submit" value="Save">
       </form>
       </div>
-     
-         
+
+
 
 
 

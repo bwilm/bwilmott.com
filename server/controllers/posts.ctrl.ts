@@ -20,7 +20,7 @@ router.route('/')
                 res.send(posts);
 
             }).catch(function (err) {
-                console.log(err);
+                cons ole.log(err);
                 res.sendStatus(500);
             });
     })

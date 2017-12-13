@@ -1,5 +1,5 @@
 // Create 3 different factories called User, Category, and Post.
-// Each of those factories should return a $resource for interacting with the entities they are named after. 
+// Each of those factories should return a $resource for interacting with the entities they are named after.
 // Only Post needs to support updating.
 
 angular.module('blog.factories', [])
@@ -41,6 +41,8 @@ angular.module('blog.factories', [])
         }]);
 
     }]);
+
+  
 
 // //return $resource('https://pfc.azure-mobile.net/tables/articles', {}, {
 //     query: {method:'GET',isArray:true}

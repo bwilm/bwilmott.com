@@ -11,7 +11,7 @@ angular.module('blog', ['ngRoute', 'ngResource', 'blog.controllers', 'blog.facto
             .when('/', {
                 templateUrl: 'views/home.html',
                 controller: 'PostListController'
-               
+
             })
             .when('/login', {
                 templateUrl: 'views/login.html',
@@ -20,13 +20,13 @@ angular.module('blog', ['ngRoute', 'ngResource', 'blog.controllers', 'blog.facto
             .when('/users', {
                 templateUrl: 'views/userlist.html',
                 controller: 'UserListController',
-                requiresLogin: true,
+                requiresLogin: false,
                // requiresAdmin: true
             })
             .when('/compose', {
                 templateUrl: 'views/compose.html',
                 controller: 'ComposePostController',
-                requiresLogin: true,
+                requiresLogin: false,
             })
             .when('/test/:id', {
                 templateUrl: 'views/update.html',
@@ -39,7 +39,7 @@ angular.module('blog', ['ngRoute', 'ngResource', 'blog.controllers', 'blog.facto
             .when('/:id/update', {
                 templateUrl: 'views/update.html',
                 controller: 'UpdatePostController'
-               
+
             })
             .when('/logout',{
                 templateUrl:'views/login.html',
@@ -49,7 +49,7 @@ angular.module('blog', ['ngRoute', 'ngResource', 'blog.controllers', 'blog.facto
             //     templateUrl: 'views/userlist.html',
             //     controller: 'UserListController'
             // })
-           
+
 
             .otherwise({
                 redirectTo: '/login'
