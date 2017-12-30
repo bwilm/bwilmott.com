@@ -45,6 +45,14 @@ angular.module('blog', ['ngRoute', 'ngResource', 'blog.controllers', 'blog.facto
                 templateUrl:'views/login.html',
                 controller:'LoginController'
             })
+            .when('/main',{
+                templateUrl:'views/main.html',
+
+            })
+            .when('/about',{
+                templateUrl:'views/about.html',
+
+            })
             // .when('/userlist', {
             //     templateUrl: 'views/userlist.html',
             //     controller: 'UserListController'
@@ -58,14 +66,14 @@ angular.module('blog', ['ngRoute', 'ngResource', 'blog.controllers', 'blog.facto
             $locationProvider.html5Mode(true);
 
     }])
-    .run(['$rootScope', '$location', 'userService', function ($rootScope, $location, userService) {
-        $rootScope.$on('$routeChangeStart', function (event, nextRoute, previousRoute) {
-            if (nextRoute.$$route.requiresLogin && !userService.isLoggedIn()) {
-                event.preventDefault();
-                userService.loginRedirect();
-            } else if (nextRoute.$route.requiresAdmin && !userService.isAdmin()) {
-                event.preventDefault();
-                $location.replace().path('/');
-            }
-        })
-    }])
+    // .run(['$rootScope', '$location', 'userService', function ($rootScope, $location, userService) {
+    //     $rootScope.$on('$routeChangeStart', function (event, nextRoute, previousRoute) {
+    //         if (nextRoute.$$route.requiresLogin && !userService.isLoggedIn()) {
+    //             event.preventDefault();
+    //             userService.loginRedirect();
+    //         } else if (nextRoute.$route.requiresAdmin && !userService.isAdmin()) {
+    //             event.preventDefault();
+    //             $location.replace().path('/');
+    //         }
+    //     })
+    // }])

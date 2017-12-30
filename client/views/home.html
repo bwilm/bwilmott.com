@@ -1,86 +1,82 @@
-<!-- Shows all blog posts, each one showing the title, author's full name, 
-category, and date formatted MM/DD/YYYY HH:MM AM/PM
-Each blog post should have a link that says 
-Read that should link to the single blog post view
-Should have a button labeled Compose at the top of the page. 
-Clicking the button should navigate to the compose view -->
+<script>
+  $(document).ready(function(){
+   $('.slider').slider();
 
-<body>
-  <head>
-    <nav class="navbar navbar-inverse navbar-fixed-up">...</nav>
-  </head>
-  <div class="splashpage">
-    <div class="backimage">
-      <div class="container-fluid">
-        <div class="jumbotron jumbotron-fluid" ,id="splashbox">
-          <br>
+   // $('.tap-target').tapTarget('open');
 
-          <!-- <div class="container" id= "splash"> -->
-          <br>
-          <br>
+ });
 
 
-          <h1 class="display-3" style="color:hotpink;">Everything About Nothing</h1>
-          <p class="lead" style="color:hotpink;">Where Blogs come to die</p>
+</script>
+<div style="height: 100%;" class="gradient">
 
 
-          <button type="button" class="btn btn-outline-success">
-            <a ng-href="/compose">Compose!
-              <a/>
-          </button>
+<!-- <div  style=" z-index: 1"class="row">
+  <div class="col s4 ">
+    <a style ="width: 100%; opacity: 0.7;"class="waves-effect waves-light btn transparent z-depth:5" href="/main"> Main</a>
+  </div>
+  <div class="col m4 ">
+    <a style ="width: 100%; opacity: 0.7;"class="waves-effect waves-light btn transparent z-depth:5" href="/projects"> Projects</a>
+  </div>
+  <div class="col m4 ">
+    <a style ="width: 100%; opacity: 0.7;"class="waves-effect waves-light btn transparent z-depth:5" href="/about"> About</a>
+  </div>
 
-          <button type="button" class="btn btn-outline-success">
-            <a ng-href="/update">Update Blog</a>
-          </button>
-          <br>
-          <br>
 
-          <button type="button" class="btn btn-outline-success">
-            <a ng-href="/login">login</a>
-            <br>
-          </button>
-        
-          <button type="button" class="btn btn-outline-success">
-            <a ng-href="/logout">logout</a>
-            <br>
-          </button>
-        </div>
-        <br>
-        <br>
-        <div class="blogbox">
-          <div class="container">
-            <span class="inline" ng-repeat="P in Posts">
-                <div class="card inline float-left maincard w-50">
-                  
-                <img class="card-img-top rounded card-primary text-center"src="http://i68.tinypic.com/2rf6kpd.jpg"  alt="Card image cap"  >
-                
-                <div class="card-block">
-                <h2 class="card title"<span style="color:hotpink">{{P.title}}</span></h2>
-                <p class="card-text">
-                <h5>{{P.categoryname}}</h5>
-                <h5><span>{{P.authorfirstname}}</h5> <h5>{{P.authorlastname}}</span></h5>
-                <br>
-                <h5>{{P.createdAt | date}}</h5>
-                <h3>
-                  <br>
-                </h3>
-                <button type="button" class="btn btn-outline-success">
-                  <a ng-href="/{{P.id}}">select</a>
-                  <br>
-                </button>
-              </p>
+</div> -->
+
+
+
+<div class= "geoback"style:"z-index: 0">
+
+
+         <!-- random image -->
+        <!-- http://i68.tinypic.com/ipbi38.jpg red logo screen -->
+        <!-- <div style="margin-right: 10%; margin-left: 10%; margin-top: 10%;border-radius: 15px; padding-top: 30px; margin-bottom: 15%;"class="caption center-align z-depth-5 hoverable"> -->
+          <a href="/main"><h4 style=" opacity: 0.9;font-size: 100px; margin-top:15%;z-index: 100; border-radius: 15px;margin-left: 10%; margin-right: 10%;margin-bottom: 10%;"class="Julius  grey-text hoverable center-align"> Bwilmott.com</h4></a>
+          <div>
+            <div class="row">
+              <div class=" col s12">
+                <div class="container center-align">
+                  <p style="font-weight:lighter;margin-bottom: 10px;"class="Julius white-text">Hi, my name is Brandon Wimott, Im a junior web developer from Virginia Currently residing in Nashville,TN. I specialize in front-end development and can also implement backend development as well. Take a look at my contact information as well as my Github account by clicking my portfolio link above</p>
+                  <div class="divider"></div>
+
+                    <img style="height: 7em; margin-top: 15px"src="images/crop.png" alt="">
+                    <div class="container center-align">
+                      <div  style="margin-top: 10px"class="col s12">
+
+                      <a href="https://www.facebook.com/brandon.wilmott"><img style = "height: 20px" src="images/facebook.png" alt=""></a>
+                    <a href="https://github.com/bwilm"><img style = "height: 20px"src="images/github.png" alt=""></a>
+                      <a href="https://twitter.com/brandonwilmott?lang=en"><img style = "height: 20px"src="images/twitter.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/brandon-wilmott-58333650/"><img style = "height: 20px"src="images/linked.png" alt=""></a>
+
+                    </div>
+
+                    </div>
+
+
+
                 </div>
-              <br>
-            </span>
+
+              </div>
+            </div>
           </div>
 
-        </div>
-      </div>
-    </div>
+          <!-- <div style="margin-top: 10em; border-radius: 25px"class="container"> -->
+          <!-- <a id="menu" class="waves-effect waves-light btn btn-floating center-align z-depth-5 pulse" ><i class="material-icons">menu</i></a>
+
+          <!-- Tap Target Structure -->
+          <!-- <div class="tap-target teal lighten-3" data-activates="menu">
+            <div class="tap-target-content">
+              <h5>Title</h5>
+              <p>A bunch of text</p>
+            </div>
+          </div> -->
+        <!-- </div>
+        </div> -->
 
   </div>
-  </div>
-  </div>
 
-</body>
-<div id="negativespacer"></div>
+
+
+    <!-- Element Showed -->
