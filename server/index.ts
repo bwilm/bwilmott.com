@@ -1,6 +1,5 @@
 import api from './procedures/api';
 import * as express from 'express';
-import * as fs from 'fs';
 import * as path from 'path';
 import * as bodyParser from 'body-parser';
 import * as cookieParser from 'cookie-parser';
