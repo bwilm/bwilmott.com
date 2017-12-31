@@ -1,14 +1,30 @@
 {
   "name": "lab19",
   "version": "1.0.0",
-  "description": "",
-  "main": "server/index.js",
+  "description": "`Project 2: Angular Blog Covalence Full Stack: Fall 2017 Info You will be creating a blog site using Angular, Express, and MySQL You will be writing an express server and API code, so you will need to install express, body-parser, and mysql into your package.json file You will be using factories, $resource, and html5Mode Objectives - Database Create a new database called AngularBlog Create a new user for use with that database Grant all priveleges to that user for that database Log into the database as the new user Create a new table called Categories Categories should contain the following columns, spelled and capitalized exactly this way: id INT name VARCHAR(40) Additionally, id should be the primary key and should auto-increment Create a new table called Users Users should contain the following columns, spelled and capitalized exactly this way: id INT firstname VARCHAR(20) lastname VARCHAR(30) email VARCHAR(60) Additionally, id should be the primary key and should auto-increment Create a new table called Posts Posts should contain the following columns, spelled and capitalized exactly this way: id INT title VARCHAR(100) userid INT categoryid INT content TEXT createdAt DATETIME - Can set this in your stored procedure for inserting new Post Additionally, id should be the primary key and should auto-increment Additionally, userid should be a foreign key that refers to the id column of the Users table When a user is updated, or deleted, the same should happen for all their blog posts Additionally, categoryid should be a foreign key that refers to the id column of the Categories table When a category is updated, it should be updated here too. However, when a category is deleted, we should just make categoryid be NULL here. Add several users to your Users table Add several categories to your Categories table You will need to write stored procedures as the need arises. The API below will give you an idea of what stored procedures will be required.",
+  "main": "npm server/index.js",
+  "dependencies": {
+    "@types/express": "^4.11.0",
+    "@types/express-session": "^1.15.6",
+    "@types/node": "^8.5.2",
+    "body-parser": "^1.18.2",
+    "config": "^1.28.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mysql": "^2.15.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "prerender-node": "^2.7.4",
+    "tsconfig": "^7.0.0",
+    "typescript": "^2.6.2"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "source variables && npm run dev",
     "build:ts": "tsc -p .",
     "server":"node server/index.js",
-    "dev": "nodemon -e ts --dir server/ --exec \"npm run start\"",
-    "start":"npm run build:ts && npm run server"
+    "test": "source variables && npm run dev",
+    "dev":"nodemon -e ts --dir server/ --exec \"npm run build:ts && npm run server\""
   },
   "repository": {
     "type": "git",
@@ -19,32 +35,5 @@
   "bugs": {
     "url": "https://github.com/bwilm/lab19/issues"
   },
-  "homepage": "https://github.com/bwilm/lab19#readme",
-  "dependencies": {
-    "@types/bcrypt": "^1.0.0",
-    "@types/body-parser": "^1.16.7",
-    "@types/cookie-parser": "^1.4.1",
-    "@types/express-mysql-session": "^1.2.2",
-    "@types/express-session": "^1.15.6",
-    "@types/mysql": "^2.15.0",
-    "@types/passport": "^0.4.1",
-    "@types/passport-local": "^1.0.32",
-    "body-parser": "^1.18.2",
-    "config": "^1.28.1",
-    "cookie-parser": "^1.4.3",
-    "express": "^4.16.2",
-    "express-mysql-session": "^1.2.2",
-    "express-session": "^1.15.6",
-    "mysql": "^2.15.0",
-    "passport": "^0.4.0",
-    "passport-local": "^1.0.0",
-    "prerender-node": "^2.7.4",
-    "save": "^2.3.1",
-    "tsconfig": "^7.0.0",
-    "typescript": "latest"
-  },
-  "devDependencies": {
-    "nodemon": "latest"
-  },
-  "keywords": []
+  "homepage": "https://github.com/bwilm/lab19#readme"
 }
