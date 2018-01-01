@@ -6,6 +6,8 @@ $(document).ready(function(){
      $(".button-collapse").sideNav();
        $('.carousel').carousel();
 
+       $('.carousel.carousel-slider').carousel({fullWidth: false});
+
 });
 
 
@@ -22,7 +24,7 @@ $(document).ready(function(){
 </ul>
 <nav>
   <div class="nav-wrapper deep-orange darken-4  hoverable z-depth-5">
-    <a href="#!" class="brand-logo"><img style="height: 90px; width: auto; padding-bottom: 20px;"class="transparent"src="/images/bwlogo.png" alt=""></a>
+    <a href="/" class="brand-logo"><img style="height: 90px; width: auto; padding-bottom: 20px;"class="transparent"src="/images/bwlogo.png" alt=""></a>
     <ul class="right hide-on-med-and-down">
 
       <li class="quantico"style="font-weight: bolder"><a style="font-size: 20px;" href="/">home</a></li>
@@ -54,50 +56,75 @@ $(document).ready(function(){
 
 
     <div class="row">
-      <div  style="margin-top: 1em;"class=" col s3 center-align">
-  <img style="height: 20em;margin-left:1em"src="images/cropbw.png" alt="">
+      <div  style="margin-top: 1em;"class=" col s12 m6 l12 center-align">
+  <img style="height: 20em;margin-left:0.5em"src="images/cropbw.png" alt="">
 </div>
-  <div class="col s9 center-align">
+  <div class="col s12 m6 l12 center-align">
     <div class="divider"></div>
-    <p style="font-size: 80px" class=" Julius">Bwilmott.com</p>
+    <div style= "overflow: hidden;"class="container">
+    <p style="font-size: 3em;" class=" Julius">Bwilmott.com</p>
+    </div>
     <div class="divider"></div>
-  <h5 style="margin-left: 5em; margin-top: 2em;font-weight:lighter;margin-right: 2em"class="Julius">Let me help you realize your website or businesses creative potential </h5>
+  <h5 style="margin-top: 2em;font-weight:lighter;"class="Julius">Building Modern and responsive sites for this generation of consumers. </h5>
 </div>
 
 
 
   </div>
+  </div>
 
 
   <div class="divider"></div>
-  <h4 style="margin-bottom: 3em;"class= "Julius"> Completed Projects</h4>
+ <div class="container center-align">
+  <h4 style="margin-bottom: 1em;"class= "Julius"> Completed Projects</h4>
+  </div>
+
+  
+<div class="container center-align">
   <div class="row">
-    <div class="col s3">
-    <a href="http://proximo.life"target="_blank"> <div style="width: auto; overflow: hidden" class=" transparent hoverable z-depth-5">
-      <img style= " height: 150px"src="images/proximolink.png" alt=""></a>
+      <div class="col s12 m12">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/ecommerce.png">
+            
+          </div>
+          <div class="card-content">
+            <p>This E-commerce site is a simple layout for any business that lets you display items for sale and allows customers to checkout using stripe checkout method.</p>
+          </div>
+          <div class="card-action">
+            <a href="http://github.com/bwilm">Github source code</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/proximolink.png">
+             
+            </div>
+            <div class="card-content">
+              <p>Proximo is a fun restraunt app that lets you choose from local images to decide on a place to eat or a place to drink. This applicaiton is built with a nodejs backend, Angular on the front-end,utilizing Google API</p>
+            </div>
+            <div class="card-action">
+              <a href="http://proximo.life">proximo.life</a>
+            </div>
+          </div>
+        </div>
     </div>
-    </div>
-    <div class="col s3">
-      <h4 class="Julius"style="font-size= 15px">proximo.life</h4><p> Proximo is a web application that has an online dating feel. Pick images you like from locations in your area, Proximo will choose a restraunt for you!</p>
-    </div>
-    <div class="col s3">
-    <a href="http://github.brandon"target="_blank"> <div style="width: auto; overflow: hidden" class=" transparent hoverable z-depth-5">
-      <img style= " height: 150px"src="images/ecommerce.png" alt=""></a>
-    </div>
-    </div>
-    <div class="col s3">
-      <h4 class="Julius"style="font-size= 15px">e-commerce site</h4><p> Simple e-commerce cite with multiple pages and lets you checkout with a credit card etc.</p>
-    </div>
+  </div>
+
+
+  <div class="divider"></div>
+
+
+<div class="containern center-align">
+  <h4 style="margin-top: 1em;margin-bottom: 0em;"class="Julius"> Current Stack</h4>
   </div>
   <div class="divider"></div>
 
 
 
-  <h4 style="margin-top: 1em;margin-bottom: 1em;"class="Julius"> Current Stack</h4>
-  <div class="divider"></div>
-
-
-<div class="carousel"style="margin-top: 1em;">
+<div class="carousel"style="margin-top: 0em;">
 <div class="carousel-item">
       <div style="border-radius: 15px"class="card horizontal hoverable z-depth-5 transparent">
         <div class="card-image">
@@ -346,6 +373,7 @@ $(document).ready(function(){
     </a>
     <ul>
         <li><a class="btn-floating green" href="mailto:bwilmott.dev@gmail.com?Subject=Hello"target="_blank"><img  style= "height: 30px; padding-top: 10px;"src="images/email.png" alt=""></a></li>
+        <li><a class="btn-floating purple lighten-2" href="https://www.linkedin.com/in/brandon-wilmott-58333650/"target="_blank"><img  style= "height: 30px; padding-top: 10px;"src="images/linked.png" alt=""></a></li>
 
       <li><a class="btn-floating red" href="https://github.com/bwilm"target="_blank"><img  style= "height: 30px; padding-top: 10px;"src="images/github.png" alt=""></a></li>
       <li><a class="btn-floating blue darken-1"href="https://www.facebook.com/brandon.wilmott"target="_blank"><img  style= "height: 30px; padding-top: 10px;"src="images/facebook.png" alt=""></a></li>
