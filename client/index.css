@@ -1,3 +1,8 @@
+/* .wrapper{
+
+  background-image: url(/images/bwlogo.png)
+} */
+
 .slider .indicators .indicator-item.active {
     background-color: #bf360c;
 }
