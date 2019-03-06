@@ -13,7 +13,6 @@ angular.module('blog', ['ngRoute', 'ngResource'])
              
 
             })
-
             .when('/main',{
                 templateUrl:'views/single.html',
 
@@ -26,7 +25,6 @@ angular.module('blog', ['ngRoute', 'ngResource'])
             //     templateUrl: 'views/userlist.html',
             //     controller: 'UserListController'
             // })
-
 
             .otherwise({
                 redirectTo: '/home'

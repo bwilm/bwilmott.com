@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bwilm/lab19.git"
+    "url": "git+https://github.com/bwilm/bwilmott.com.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bwilm/lab19/issues"
   },
-  "homepage": "https://github.com/bwilm/lab19#readme",
+  "homepage": ".",
   "dependencies": {
     "@types/bcrypt": "^1.0.0",
     "@types/body-parser": "^1.16.7",
